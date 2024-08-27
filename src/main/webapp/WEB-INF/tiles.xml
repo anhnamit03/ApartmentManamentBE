@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//ApacheSoftware Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="sidebar" value="/WEB-INF/layout/sidebar.jsp"/>
+        <put-attribute name="content" value=""/>
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ quản trị" />
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    
+    <definition name="lockers" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý tủ đồ" />
+        <put-attribute name="content" value="/WEB-INF/pages/lockers.jsp" />
+    </definition>
+    
+    <definition name="item" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý vật phẩm" />
+        <put-attribute name="content" value="/WEB-INF/pages/item.jsp" />
+    </definition>
+    
+    <definition name="item-create" extends="baseLayout">
+        <put-attribute name="title" value="Thêm vật phẩm" />
+        <put-attribute name="content" value="/WEB-INF/pages/item-detail.jsp" />
+    </definition>
+    
+    <definition name="surveys" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý khảo sát" />
+        <put-attribute name="content" value="/WEB-INF/pages/surveys.jsp" />
+    </definition>
+      <definition name="survey_create" extends="baseLayout">
+        <put-attribute name="title" value="Thêm khảo sát" />
+        <put-attribute name="content" value="/WEB-INF/pages/survey_create.jsp" />
+    </definition>
+    
+    <definition name="login" template="/WEB-INF/pages/login.jsp" ></definition>
+    
+    <definition name="invoices" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý hoá đơn" />
+        <put-attribute name="content" value="/WEB-INF/pages/invoices.jsp" />
+    </definition>
+    
+    <definition name="relatives" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý họ hàng" />
+        <put-attribute name="content" value="/WEB-INF/pages/relative.jsp" />
+    </definition>
+    
+    <definition name="reflectives" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý phan hoi" />
+        <put-attribute name="content" value="/WEB-INF/pages/reflectives.jsp" />
+    </definition>
+    
+    <definition name="residents" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý cư dân" />
+        <put-attribute name="content" value="/WEB-INF/pages/residents.jsp" />
+    </definition>
+    <definition name="residentUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Update cư dân" />
+        <put-attribute name="content" value="/WEB-INF/pages/resident_update.jsp" />
+    </definition>
+    <definition name="statistics" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê" />
+        <put-attribute name="content" value="/WEB-INF/pages/statistic.jsp" />
+    </definition>
+    
+</tiles-definitions>
+
+

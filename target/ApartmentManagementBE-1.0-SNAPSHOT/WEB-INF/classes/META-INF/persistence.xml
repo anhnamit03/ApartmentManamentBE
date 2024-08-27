@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="com.hvn_ApartmentManagementBE_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.hvn.pojos.Locker_1</class>
+    <class>com.hvn.pojos.User_1</class>
+    <class>com.hvn.pojos.Surveyform_1</class>
+    <class>com.hvn.pojos.Status_1</class>
+    <class>com.hvn.pojos.Item_1</class>
+    <class>com.hvn.pojos.Payment_1</class>
+    <class>com.hvn.pojos.Relative_1</class>
+    <class>com.hvn.pojos.Role_1</class>
+    <class>com.hvn.pojos.Answer_1</class>
+    <class>com.hvn.pojos.Question_1</class>
+    <class>com.hvn.pojos.Reflective_1</class>
+    <class>com.hvn.pojos.Fee_1</class>
+    <class>com.hvn.pojo.Reflective</class>
+    <class>com.hvn.pojo.Fee</class>
+    <class>com.hvn.pojo.Payment</class>
+    <class>com.hvn.pojo.Locker</class>
+    <class>com.hvn.pojo.Item</class>
+    <class>com.hvn.pojo.Surveyform</class>
+    <class>com.hvn.pojo.Answer</class>
+    <class>com.hvn.pojo.Role</class>
+    <class>com.hvn.pojo.Relative</class>
+    <class>com.hvn.pojo.Status</class>
+    <class>com.hvn.pojo.Question</class>
+    <class>com.hvn.pojo.User</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/apartmentmanagement?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="anhnam0123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
